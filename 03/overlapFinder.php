@@ -19,4 +19,10 @@ foreach($claims as $claim) {
 	$fabric->insertClaim($claim);	
 }
 echo $fabric->getDiagramPNG();
-echo $fabric->countOverlap(false);
+echo $fabric->countOverlap(false)."\n";
+
+foreach($claims as $claim) {
+	if ($fabric->checkPerfectClaim($claim)) {
+		echo $claim->getId()."\n";
+	}
+}

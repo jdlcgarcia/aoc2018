@@ -19,6 +19,10 @@ class Claim {
 		$this->size = $size;
 	}
 
+	public function getId() {
+		return $this->id;
+	}
+
 	public function lineFormat() {
 		return "#".$this->id." @ ".$this->padding->getFormatted().": ".$this->size->getFormatted();
 	}

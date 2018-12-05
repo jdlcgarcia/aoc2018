@@ -19,3 +19,5 @@ It took too much time for me to know what they were asking... you just need to c
 1. To finish, just count the overlaps! it's a good idea to count them while drawing, so you don't need to recount again.
 1. For debugging (I needed A LOT of debugging) I exported the fabric to a `.png` file. The collisions are marked in red.
 1. Just to improve the solution, I'd do a helper to parse the input.
+
+The second part was too easy once I'm using the correct data structure. Just check that there's no overlapped cells in the area of the rectangle.

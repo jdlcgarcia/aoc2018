@@ -73,4 +73,15 @@ class Fabric {
 		}
 		return $this->overlap;
 	}
+
+	public function checkPerfectClaim(Claim $claim) {
+		for ($i = $claim->getTopPadding(); $i < $claim->getTopPadding()+$claim->getLength(); $i++) {
+			for ($j = $claim->getLeftPadding(); $j < $claim->getLeftPadding()+$claim->getWidth(); $j++) {
+				if ($this->matrix[$i][$j] == self::CHAR_OVERLAP) {
+					return false;
+				}
+			}
+		}	
+		return true;
+	}
 }
