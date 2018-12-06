@@ -40,3 +40,12 @@ I think this is easy... I'll go with PERL this time as the input is easy to pars
 The second part's solution was veeery dirty, but it worked. I reused the function I made on the first part, but looping and parsing the strings without units. It took too much time to process everything, but as I was showing the output I realize one of them was way smaller than the others, so I tried and it worked as the solution.
 
 As a geek note: this day's problem is 100% made on an iPad Pro, writing the code in Textastic, uploading it to my server in DigitalOcean and executing the script via Termius.
+
+## Day 6: Chronal Coordinates
+
+I'm a little worried about that Manhattan distance... never heard of that, but I think I understand it. 
+
+1. First of all, we'll parse the input. I'll reuse the class Pair that I made for the Day 3 problem. 
+1. Then we can draw the diagram, so we'll create a class Diagram to handle all the drawing operations.
+1. Once created, we need to calculate which is the nearest point for every cell using that Manhattan distance. Checking in Wikipedia (and other sources...) we can get a function to calculate that distance.
+1. After that, we count the frequence of each point in the drawing. We return it, plus one (the coordinate itself!)
