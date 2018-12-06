@@ -11,7 +11,7 @@ foreach ($file_lines as $line) {
 }
 
 $diagram = new Diagram($coordinateList);
-$diagram->calculateSums(10000);
-echo "The safe region has a total size of ".$diagram->getSaferThan(32)."\n";
+$diagram->calculateSums();
+echo "The safe region has a total size of ".$diagram->getSaferThan(10000)."\n";
 //echo "The highest area is ".$diagram->getMostFrequent()."\n";
 //$diagram->draw();
