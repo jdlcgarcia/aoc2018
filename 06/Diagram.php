@@ -48,7 +48,8 @@ class Diagram {
 		}
 	}
 	
-	public function calculateSums() {
+	public function getSaferThan($safePoint) {
+		$safeArea = 0;
 		for ($i = 0; $i <= $this->maxDimension; $i++) {
 			for ($j = 0; $j <= $this->maxDimension; $j++) {
 				$pointX = new Coordinate("X", $i, $j);
@@ -56,16 +57,7 @@ class Diagram {
 				foreach($this->coordinateList as $coordinate) {
 					$sumOfDistances += $pointX->distance($coordinate);
 				}
-				$this->distanceToAll[$i][$j] = $sumOfDistances;
-			}
-		}
-	}
-	
-	public function getSaferThan($safePoint) {
-		$safeArea = 0;
-		for ($i = 0; $i <= $this->maxDimension; $i++) {
-			for ($j = 0; $j <= $this->maxDimension; $j++) {
-				if ($this->distanceToAll[$i][$j] < $safePoint) {
+				if ($sumOfDistances < $safePoint) {
 					$safeArea++;
 				}
 			}

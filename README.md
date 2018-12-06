@@ -49,3 +49,5 @@ I'm a little worried about that Manhattan distance... never heard of that, but I
 1. Then we can draw the diagram, so we'll create a class Diagram to handle all the drawing operations.
 1. Once created, we need to calculate which is the nearest point for every cell using that Manhattan distance. Checking in Wikipedia (and other sources...) we can get a function to calculate that distance.
 1. After that, we count the frequence of each point in the drawing. We return it, plus one (the coordinate itself!)
+
+The second part was very easy. You just need to accumulate the distances for each point, and then loop them to see if they're nearer than the limit of 10k that the problem says. 
