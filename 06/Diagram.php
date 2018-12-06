@@ -10,6 +10,8 @@ class Diagram {
 	
 	private $maxDimension = 0;
 	
+	private $distanceToAll;
+	
 	function __construct($coordinateList) {
 		$this->coordinateList = $coordinateList;
 		//locate the coordinates
@@ -44,6 +46,31 @@ class Diagram {
 				}
 			}
 		}
+	}
+	
+	public function calculateSums() {
+		for ($i = 0; $i <= $this->maxDimension; $i++) {
+			for ($j = 0; $j <= $this->maxDimension; $j++) {
+				$pointX = new Coordinate("X", $i, $j);
+				$sumOfDistances = 0;
+				foreach($this->coordinateList as $coordinate) {
+					$sumOfDistances += $pointX->distance($coordinate);
+				}
+				$this->distanceToAll[$i][$j] = $sumOfDistances;
+			}
+		}
+	}
+	
+	public function getSaferThan($safePoint) {
+		$safeArea = 0;
+		for ($i = 0; $i <= $this->maxDimension; $i++) {
+			for ($j = 0; $j <= $this->maxDimension; $j++) {
+				if ($this->distanceToAll[$i][$j] < $safePoint) {
+					$safeArea++;
+				}
+			}
+		}
+		return $safeArea;
 	}
 	
 	function draw() {
