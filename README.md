@@ -8,7 +8,7 @@ The second part of the problem handles a sum on multiple iterations of an array.
 ## Day 2: Inventory Management System
 My first approach is counting how many times is repeated every character, and then add it to two hashes (words with repetitions of 2 and words with repetitions of 3). We count the elements and we multiply them.
 
-In a first guess, I'd loop every word (O(n)) and then loop the other words in the list (O(n-1) ~ O(n)) to see which is the minimum distance between boxIDs, that's it, the maximum of repetitions in place. It'd be a O(n²) approach (assuming n as the size of the list. It'd be O(n³) assuming n as the size of the word), let's start with that.
+In a first guess, I'd loop every word `(O(n))` and then loop the other words in the list (O(n-1) ~ O(n)) to see which is the minimum distance between boxIDs, that's it, the maximum of repetitions in place. It'd be a O(n²) approach (assuming n as the size of the list. It'd be O(n³) assuming n as the size of the word), let's start with that.
 
 ## Day 3: No Matter How You Slice It
 It took too much time for me to know what they were asking... you just need to check how many squared inches are occupied for two or more claims! 
@@ -33,3 +33,10 @@ It looks like another parsing/looping problem, so I'll go with PHP with this one
 The magic happens when I'm parsing the sleep/awakening of the guards. Once they wake up, I log in the Sleep Matrix the minutes they've been sleeping and adding them to an accumulator of their sleep time. So, when I finish parsing the input I have an array with the frecuencies. I just have to take the biggest sleeper with that accumulator and his top minute asleep with his Sleep Matrix.
 
 For the second part, I just have to loop every Sleep Matrix and get the highest value. Once found, just pull the yarn to know who did it. And eventually fire him.
+
+## Day 5: Alchemical Reduction
+
+I think this is easy... I'll go with PERL this time as the input is easy to parse. In a first view, you just have to read the line and once you find a collision, delete it and start reading again from the beginning.
+The second part's solution was veeery dirty, but it worked. I reused the function I made on the first part, but looping and parsing the strings without units. It took too much time to process everything, but as I was showing the output I realize one of them was way smaller than the others, so I tried and it worked as the solution.
+
+As a geek note: this day's problem is 100% made on an iPad Pro, writing the code in Textastic, uploading it to my server in DigitalOcean and executing the script via Termius.
