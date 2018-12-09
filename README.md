@@ -51,3 +51,11 @@ I'm a little worried about that Manhattan distance... never heard of that, but I
 1. After that, we count the frequence of each point in the drawing. We return it, plus one (the coordinate itself!)
 
 The second part was very easy. You just need to accumulate the distances for each point, and then loop them to see if they're nearer than the limit of 10k that the problem says. 
+
+## Day 7: The Sum of Its Parts
+
+Easy: tree building and reading it in node order. I know there are implementations of trees for PHP, but I'll make my own.
+
+But first, let's parse the input.
+
+Two days later: NOT THAT EASY. I've been struggling two days with this problem. Building a Tree was an horrible idea, building a forest too. I've finished working with a bidimensional array and parsing the nodes without conditions in a hacky way. Didn't liked it, but worked. /shrug.
