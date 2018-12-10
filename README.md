@@ -59,3 +59,11 @@ Easy: tree building and reading it in node order. I know there are implementatio
 But first, let's parse the input.
 
 Two days later: NOT THAT EASY. I've been struggling two days with this problem. Building a Tree was an horrible idea, building a forest too. I've finished working with a bidimensional array and parsing the nodes without conditions in a hacky way. Didn't liked it, but worked. /shrug.
+
+The second part was more difficult, I thought... but I created a Worker class (*communism intensifies*) and I looped every second. In each second, this tasks happen:
+1. Check for finished step.
+1. Find available steps.
+1. Assign available steps to free workers, if any.
+1. Make the busy workers work (*whip cracks*).
+
+Once there's no steps to finish, we can check the second reached.
