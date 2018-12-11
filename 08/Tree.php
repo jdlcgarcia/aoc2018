@@ -11,7 +11,10 @@ class Tree {
 	} 
 
 	public function sumMetadata() {
-		return 	$this->node->getSum();
-		//var_dump($this->node);
+		return $this->node->getSum();
+	}
+
+	public function getValue() {
+		return $this->node->getValue();
 	}
 }

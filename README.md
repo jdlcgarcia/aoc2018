@@ -72,3 +72,4 @@ Once there's no steps to finish, we can check the second reached.
 
 Parsing the tree wasn't as hard as I saw it before. I needed some advice from Reddit and I still don't fully understand how is working. But these are tough days at work so I'll skip this one.
 
+Second part was easy once the tree was parsed. But is a strange way to work.
