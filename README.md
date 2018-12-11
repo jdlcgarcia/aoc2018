@@ -67,3 +67,9 @@ The second part was more difficult, I thought... but I created a Worker class (*
 1. Make the busy workers work (*whip cracks*).
 
 Once there's no steps to finish, we can check the second reached.
+
+## Day 8: Memory Maneuver
+
+Parsing the tree wasn't as hard as I saw it before. I needed some advice from Reddit and I still don't fully understand how is working. But these are tough days at work so I'll skip this one.
+
+Second part was easy once the tree was parsed. But is a strange way to work.
