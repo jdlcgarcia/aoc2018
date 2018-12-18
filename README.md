@@ -83,3 +83,9 @@ The rules are set, that %23 rule was strange to implement, but as long as it wor
 It also takes a lot of time, the algorithm used is O(n) and the input for the first exercise took a good 3-4 minutes. The second part is 100x larger so... let's start doing something while it's calculating :P
 
 I drafted the problem in C++ but I'm too rusty. I think I'll better finish the other days and then try to train my C++ skills (and maybe other languages too).
+
+## Day 10: The Stars Align
+
+At first sight it looks like a funny problem! let's parse the input and then start generating images, one per second.
+
+
