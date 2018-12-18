@@ -57,6 +57,7 @@ class Game {
                 array_splice($this->playground, $index, 0, [$marble]);
                 $this->currentMarble = $marble;
             }
+            echo "current marble is ".$this->currentMarble->getValue()."\n";
 		}
 	}
 
