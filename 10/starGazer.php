@@ -12,8 +12,8 @@ foreach ($file_lines as $line) {
     $sky->addStar(new Star($patternSolved[1], $patternSolved[2], $patternSolved[3], $patternSolved[4]));
 }
 
-$sky->snapshot();
+$sky->textSnapshot();
 for($i=0;$i<4;$i++) {
 	$sky->move();
-	$sky->snapshot($i);	
+	$sky->textSnapshot($i);	
 }
