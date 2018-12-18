@@ -73,3 +73,13 @@ Once there's no steps to finish, we can check the second reached.
 Parsing the tree wasn't as hard as I saw it before. I needed some advice from Reddit and I still don't fully understand how is working. But these are tough days at work so I'll skip this one.
 
 Second part was easy once the tree was parsed. But is a strange way to work.
+
+## Day 9: Marble Mania
+
+This time there's no need to parse any input. But is a strange game. Let's just put the rules in a cody way.
+
+The rules are set, that %23 rule was strange to implement, but as long as it works...
+
+It also takes a lot of time, the algorithm used is O(n) and the input for the first exercise took a good 3-4 minutes. The second part is 100x larger so... let's start doing something while it's calculating :P
+
+I drafted the problem in C++ but I'm too rusty. I think I'll better finish the other days and then try to train my C++ skills (and maybe other languages too).
